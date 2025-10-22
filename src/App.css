@@ -1,12 +1,10 @@
 #root {
   width:100vw;
-  height:100vh;
   background-color:white;
   margin:5px;
-  padding:5px;
   border:2px solid red;
   display:grid;
-  grid-template-rows:10% 75% 10%;
+  grid-template-rows:1fr 6fr 1fr;
   gap:5px;
 }
 

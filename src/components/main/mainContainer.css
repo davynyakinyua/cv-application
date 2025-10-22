@@ -1,18 +1,89 @@
+/* styles for the main container component*/
 .main-container {
     border:2px solid black;
     grid-row:2/3;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     padding:5px;
+    gap:0.3rem;
+    
 
 }
 
+/* styles for the form on mainContainer.jsx*/
 form {
     border:2px solid blue;
-    height:100%;
+    padding:3rem;
 }
 
+/* styles for the display board of the resume in the mainContainer.jsx*/
 .display {
     border:2px solid blue;
-    height:100%;
+}
+
+/* styles for info.jsx component*/
+.info {
+    border:2px solid red;
+}
+
+/* styles for education component education.jsx*/
+.education {
+    border:2px solid red;
+}
+
+/* styles for buttons */
+.buttons {
+    border:2px solid black;
+    display:flex;
+    gap:0.5rem;
+}
+
+
+.edit-button, .submit {
+    color:white;
+    background-color:blue;
+    margin:0.5rem 0 0.5rem 0; 
+}
+
+input:valid {
+    background-color:#b2f2bb;
+    border:3px solid #b2f2bb;
+}
+
+input:invalid {
+    background-color:white;
+    border:3px solid #ffa8a8;
+}
+
+input:focus {
+    background-color:#b2f2bb;
+    border:3px solid #b2f2bb;
+}
+
+input:hover {
+    border:3px solid #b2f2bb;
+    background-color:white;
+
+}
+
+textarea {
+    background-color:white;
+}
+
+textarea:invalid {
+    border:3px solid #ffa8a8;
+}
+
+textarea:valid {
+    background-color:#b2f2bb;
+    border:3px solid #b2f2bb;
+}
+
+textarea:focus {
+    background-color:#b2f2bb;
+}
+
+textarea:hover {
+    border:3px solid #b2f2bb;
+    background-color:white;
 }
