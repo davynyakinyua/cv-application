@@ -1,29 +1,37 @@
 import React from 'react';
+import { useFormContext } from '../../context';
 
 
 function Experience (){
+    const {formData, updateField} = useFormContext();
+
+    const handleChange = (e) => {
+        const {name, value} = e.target;
+
+        updateField(name, value);
+    }
     return (
         <div className="experience">
             <h4>Experience</h4>
             <label htmlFor="company">Company Name:</label>
             <br />
-            <input type="text" id="company" name="company" required />
+            <input type="text" id="company" name="company" value={formData?.company || ''} onChange={handleChange} required />
             <br />
             <label htmlFor="position">Position</label>
             <br />
-            <input type="text" id="position" name="position" required />
+            <input type="text" id="position" name="position" value={formData?.position || ''} onChange={handleChange} required />
             <br />
             <label htmlFor="responsibilities">Responsibilities</label>
             <br />
-            <input type="text" id="responsibilities" name="responsibilities" required />
+            <textarea id="responsibilities" name="responsibilities" value={formData?.responsibilities || ''} onChange={handleChange} required ></textarea>
             <br />
-            <label htmlFor="start-date">Start Date:</label>
+            <label htmlFor="job-start">Start Date:</label>
             <br />
-            <input type="date" id="start-date" name="start-date" required />
+            <input type="date" id="job-start" name="job-start" value={formData?.start || ''} onChange={handleChange} required />
             <br />
-            <label htmlFor="end-date">End Date:</label>
+            <label htmlFor="job-end">End Date:</label>
             <br />
-            <input type="date" id="end-date" name="end-date" required />
+            <input type="date" id="job-end" name="job-end" value={formData?.end || ''} onChange={handleChange} required />
         </div>
     );
 }

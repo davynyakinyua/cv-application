@@ -48,11 +48,13 @@ form {
 input:valid {
     background-color:#b2f2bb;
     border:3px solid #b2f2bb;
+    color:black;
 }
 
 input:invalid {
     background-color:white;
     border:3px solid #ffa8a8;
+    color:black;
 }
 
 input:focus {
@@ -86,4 +88,14 @@ textarea:focus {
 textarea:hover {
     border:3px solid #b2f2bb;
     background-color:white;
+}
+
+button:hover {
+    background-color:#ffec99;
+    color:black;
+    border:2px solid #ffec99;
+}
+
+input[type="date"] {
+    background-color:purple;
 }
