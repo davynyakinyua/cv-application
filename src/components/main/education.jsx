@@ -22,13 +22,13 @@ function Education (){
             <br />
             <input type="text" id="title" name="title" value={formData?.title || ''} onChange={handleChange} required />
             <br />
-            <label htmlFor="school-start-date">start Date:</label>
+            <label htmlFor="schoolStartDate">start Date:</label>
             <br />
-            <input type="date" id="school-start-date" name="school-start-date" value={formData?.start || ''} onChange={handleChange} required />
+            <input type="date" id="schoolStartDate" name="schoolStartDate" value={formData?.schoolStartDate || ''} onChange={handleChange} required />
             <br />
-            <label htmlFor="school-end-date">End Date</label>
+            <label htmlFor="schoolEndDate">End Date</label>
             <br />
-            <input type="date" id="end-date" name="school-end-date" value={formData?.end || ''} onChange={handleChange} required />
+            <input type="date" id="schoolEndDate" name="schoolEndDate" value={formData?.schoolEndDate || ''} onChange={handleChange} required />
         </div>
     );
 }

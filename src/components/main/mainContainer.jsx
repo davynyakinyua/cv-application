@@ -26,13 +26,13 @@ function MainComponent (){
             summary: e.target.summary.value,
             institution: e.target.institution.value,
             title: e.target.title.value,
-            schoolStartDate: e.target.start.value,
-            schoolEndDate: e.target.end.value,
+            schoolStartDate: e.target.schoolStartDate.value,
+            schoolEndDate: e.target.schoolEndDate.value,
             company: e.target.company.value,
             position: e.target.position.value,
             responsibilities: e.target.responsibilities.value,
-            jobStartDate: e.target.start.value,
-            jobEndDate: e.target.end.value,
+            jobStartDate: e.target.jobStart.value,
+            jobEndDate: e.target.jobEnd.value,
         };
         console.log('Form Data:', formData);
         setData(formData);
@@ -56,14 +56,22 @@ function MainComponent (){
                 <p>Name: {data.username || ''}</p>
                 <p>Email: {data.email || ''}</p>
                 <p>Phone No.: {data.phone || ''}</p>
+
                 <h3>Professional Summary</h3>
                 <p>{data.summary || ''}</p>
+
                 <h4>Education</h4>
                 <p>{data.institution || ''}</p>
                 <p>{data.title || ''}</p>
                 <p>Start Date: {data.schoolStartDate || ''}</p>
                 <p>End Date: {data.schoolEndDate || ''}</p>
 
+                <h5>Experience</h5>
+                <p>{data.company || ''}</p>
+                <p>{data.position || ''}</p>
+                <p>{data.responsibilities || ''}</p>
+                <p>Start Date: {data.jobStartDate || ''}</p>
+                <p>End Date: {data.jobEndDate || ''}</p>
 
             </div>
         </div>

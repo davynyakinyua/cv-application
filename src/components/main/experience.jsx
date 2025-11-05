@@ -27,11 +27,11 @@ function Experience (){
             <br />
             <label htmlFor="job-start">Start Date:</label>
             <br />
-            <input type="date" id="job-start" name="job-start" value={formData?.start || ''} onChange={handleChange} required />
+            <input type="date" id="job-start" name="jobStart" value={formData?.jobStart || ''} onChange={handleChange} required />
             <br />
             <label htmlFor="job-end">End Date:</label>
             <br />
-            <input type="date" id="job-end" name="job-end" value={formData?.end || ''} onChange={handleChange} required />
+            <input type="date" id="job-end" name="jobEnd" value={formData?.jobEnd || ''} onChange={handleChange} required />
         </div>
     );
 }
