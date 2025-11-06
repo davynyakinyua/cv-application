@@ -6,6 +6,7 @@ import Experience from './experience'
 import Buttons from './buttons'
 import Summary from './summary'
 import FormProvider from "../../context";
+import ResponsibilitiesList from "./responsibilities";
 
 
 
@@ -52,10 +53,10 @@ function MainComponent (){
             </FormProvider>
             
             <div className="display">
-                <div class="output">
+                <div className="output">
                     <div className="title-display">
-                        <h2> Your Resume</h2>
-                        <p>Name: {data.username || ''}</p>
+                        <h2> Resume</h2>
+                        <p>{data.username || ''}</p>
                     </div>
                     <div className="details">
                         <p>Email: {data.email || ''}</p>
@@ -82,7 +83,7 @@ function MainComponent (){
                             <p>Start Date: {data.jobStartDate || ''}</p>
                             <p>End Date: {data.jobEndDate || ''}</p>
                         </div>
-                        <p>{data.responsibilities || ''}</p>
+                        <ResponsibilitiesList responsibilities={data.responsibilities}/>
                     </div>
                     
                 </div>
