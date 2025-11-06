@@ -1,11 +1,10 @@
 /* styles for the main container component*/
 .main-container {
-    border:2px solid black;
     background-color:#dee2e6;
     grid-row:2/3;
     display:grid;
     grid-template-columns: 35% 60%;
-    padding:5px;
+    padding:2rem 0 2rem;
     gap:1rem;
     justify-items: center;
     
@@ -14,29 +13,12 @@
 
 /* styles for the form on mainContainer.jsx*/
 form {
-    border:2px solid blue;
     padding:3rem;
     background-color:white;
 }
 
-/* styles for the display board of the resume in the mainContainer.jsx*/
-.display {
-    border:2px solid blue;
-}
-
-/* styles for info.jsx component*/
-.info {
-    border:2px solid red;
-}
-
-/* styles for education component education.jsx*/
-.education {
-    border:2px solid red;
-}
-
 /* styles for buttons */
 .buttons {
-    border:2px solid black;
     display:flex;
     gap:0.5rem;
 }
@@ -103,12 +85,15 @@ input[type="date"] {
     background-color:purple;
 }
 
-
+.display {
+    width:100%;
+}
 .output {
     height:100%;
     padding:0.6rem;
     text-align: center;
     background-color:#d3f9d8;
+    width:100%;
 }
 
 .details {

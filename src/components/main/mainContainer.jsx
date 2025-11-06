@@ -40,6 +40,7 @@ function MainComponent (){
         console.log('Data:',data);
     }
 
+
     return (
         <div className="main-container">
             <FormProvider>
@@ -55,33 +56,33 @@ function MainComponent (){
             <div className="display">
                 <div className="output">
                     <div className="title-display">
-                        <h2> Resume</h2>
+                        <h2>{data.username ? "Resume" : ''}</h2>
                         <p>{data.username || ''}</p>
                     </div>
                     <div className="details">
-                        <p>Email: {data.email || ''}</p>
-                        <p>Phone No.: {data.phone || ''}</p>
+                        <p>{data.email?"Email:" : ''} {data.email || ''}</p>
+                        <p>{data.phone?'Phone No.:' : ''} {data.phone || ''}</p>
                     </div>
                     <div className="summary">
-                        <h3>Professional Summary</h3>
+                        <h3>{data.summary?'Professional Summary':''}</h3>
                         <p>{data.summary || ''}</p>
                     </div>
                     <div className="edu-display">
-                        <h4>Education</h4>
+                        <h4>{data.title?'Education':''}</h4>
                         <p>{data.title || ''}</p>
                         <div className="timeline">
                             <p>{data.institution || ''}</p>
-                            <p>Start Date: {data.schoolStartDate || ''}</p>
-                            <p>End Date: {data.schoolEndDate || ''}</p>
+                            <p>{data.schoolStartDate?'Start Date:':''} {data.schoolStartDate || ''}</p>
+                            <p>{data.schoolEndDate?'End Date:':''} {data.schoolEndDate || ''}</p>
                         </div>
                     </div>
                     <div className="expe-display">
-                        <h5>Experience</h5>
+                        <h5>{data.position?'Experience':''}</h5>
                         <p>{data.position || ''}</p>
                         <div className="timeline">
                             <p>{data.company || ''}</p>
-                            <p>Start Date: {data.jobStartDate || ''}</p>
-                            <p>End Date: {data.jobEndDate || ''}</p>
+                            <p>{data.jobStartDate?'Start Date:':''} {data.jobStartDate || ''}</p>
+                            <p>{data.jobEnd?'End Date:':''} {data.jobEndDate || ''}</p>
                         </div>
                         <ResponsibilitiesList responsibilities={data.responsibilities}/>
                     </div>
