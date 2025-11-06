@@ -52,26 +52,40 @@ function MainComponent (){
             </FormProvider>
             
             <div className="display">
-                <h2> Your Resume</h2>
-                <p>Name: {data.username || ''}</p>
-                <p>Email: {data.email || ''}</p>
-                <p>Phone No.: {data.phone || ''}</p>
-
-                <h3>Professional Summary</h3>
-                <p>{data.summary || ''}</p>
-
-                <h4>Education</h4>
-                <p>{data.institution || ''}</p>
-                <p>{data.title || ''}</p>
-                <p>Start Date: {data.schoolStartDate || ''}</p>
-                <p>End Date: {data.schoolEndDate || ''}</p>
-
-                <h5>Experience</h5>
-                <p>{data.company || ''}</p>
-                <p>{data.position || ''}</p>
-                <p>{data.responsibilities || ''}</p>
-                <p>Start Date: {data.jobStartDate || ''}</p>
-                <p>End Date: {data.jobEndDate || ''}</p>
+                <div class="output">
+                    <div className="title-display">
+                        <h2> Your Resume</h2>
+                        <p>Name: {data.username || ''}</p>
+                    </div>
+                    <div className="details">
+                        <p>Email: {data.email || ''}</p>
+                        <p>Phone No.: {data.phone || ''}</p>
+                    </div>
+                    <div className="summary">
+                        <h3>Professional Summary</h3>
+                        <p>{data.summary || ''}</p>
+                    </div>
+                    <div className="edu-display">
+                        <h4>Education</h4>
+                        <p>{data.title || ''}</p>
+                        <div className="timeline">
+                            <p>{data.institution || ''}</p>
+                            <p>Start Date: {data.schoolStartDate || ''}</p>
+                            <p>End Date: {data.schoolEndDate || ''}</p>
+                        </div>
+                    </div>
+                    <div className="expe-display">
+                        <h5>Experience</h5>
+                        <p>{data.position || ''}</p>
+                        <div className="timeline">
+                            <p>{data.company || ''}</p>
+                            <p>Start Date: {data.jobStartDate || ''}</p>
+                            <p>End Date: {data.jobEndDate || ''}</p>
+                        </div>
+                        <p>{data.responsibilities || ''}</p>
+                    </div>
+                    
+                </div>
 
             </div>
         </div>
