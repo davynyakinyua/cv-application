@@ -3,7 +3,6 @@ import Info from './info';
 import './mainContainer.css'
 import Education from './education'
 import Experience from './experience'
-import Buttons from './buttons'
 import Summary from './summary'
 import FormProvider from "../../context";
 import ResponsibilitiesList from "./responsibilities";
@@ -40,7 +39,6 @@ function MainComponent (){
         console.log('Data:',data);
     }
 
-
     return (
         <div className="main-container">
             <FormProvider>
@@ -49,7 +47,9 @@ function MainComponent (){
                     <Summary />
                     <Education />
                     <Experience />
-                    <Buttons />
+                    <div className="buttons">
+                        <button type="submit" className="submit">Submit</button>
+                    </div>
                 </form>
             </FormProvider>
             

@@ -15,7 +15,7 @@ function Experience (){
             <h4>Experience</h4>
             <label htmlFor="company">Company Name:</label>
             <br />
-            <input type="text" id="company" name="company" value={formData?.company || ''} onChange={handleChange} required />
+            <input type="text" id="company" name="company" value={formData?.company || ''} onChange={handleChange} autoComplete='organization' required />
             <br />
             <label htmlFor="position">Position</label>
             <br />

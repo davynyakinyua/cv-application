@@ -15,15 +15,15 @@ function Info (){
             <h2>Personal Details</h2>
             <label htmlFor="username">Name:</label>
             <br />
-            <input type="text" id="username" name="username" value={formData?.username || ''} onChange={handleChange} required />
+            <input type="text" id="username" name="username" value={formData?.username || ''} onChange={handleChange} autoComplete='given-name' required />
             <br />
             <label htmlFor="email">Email:</label>
             <br />
-            <input type="email" id="email" name="email" value={formData?.email || ''} onChange={handleChange} required/>
+            <input type="email" id="email" name="email" value={formData?.email || ''} onChange={handleChange} autoComplete='email' required/>
             <br />
             <label htmlFor="phone">Phone no:</label>
             <br />
-            <input type="number" name="phone" value={formData?.phone || ''} onChange={handleChange} required/>
+            <input type="tel" id="phone" name="phone" value={formData?.phone || ''} onChange={handleChange} autoComplete='tel' required/>
         </div>
     );
 }

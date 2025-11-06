@@ -20,7 +20,7 @@ function Education (){
             <br />
             <label htmlFor="title">Title of Study:</label>
             <br />
-            <input type="text" id="title" name="title" value={formData?.title || ''} onChange={handleChange} required />
+            <input type="text" id="title" name="title" value={formData?.title || ''} onChange={handleChange} autoComplete='on' required />
             <br />
             <label htmlFor="schoolStartDate">start Date:</label>
             <br />
