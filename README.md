@@ -1,3 +1,48 @@
+
+# Online Resume Builder
+
+This is an online resume builder application built with React. Users can input their personal data into a web form to generate a professional resume.
+
+## Live Demo
+
+You can try out the application here: 
+
+## Features
+
+- User-friendly interface for easy data input
+- Ability to update and revise information easily
+- Simple, clean layout for the resume
+
+## Technologies Used
+- HTML
+- CSS
+- JAVASCRIPT
+- REACT
+- VITE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
