@@ -136,3 +136,8 @@ input[type="date"] {
     margin-left:1rem;
 }
 
+.download {
+    background-color:blue;
+    border:2px solid blue;
+    color:white;
+}

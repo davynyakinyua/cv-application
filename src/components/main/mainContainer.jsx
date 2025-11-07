@@ -39,6 +39,8 @@ function MainComponent (){
         console.log('Data:',data);
     }
 
+    
+
     return (
         <div className="main-container">
             <FormProvider>
@@ -86,6 +88,7 @@ function MainComponent (){
                         </div>
                         <ResponsibilitiesList responsibilities={data.responsibilities}/>
                     </div>
+                    
                     
                 </div>
 
