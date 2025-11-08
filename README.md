@@ -5,7 +5,7 @@ This is an online resume builder application built with React. Users can input t
 
 ## Live Demo
 
-You can try out the application here: 
+You can try out the application here: https://resume-creator-cv.netlify.app/ 
 
 ## Features
 
