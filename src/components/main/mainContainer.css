@@ -135,9 +135,3 @@ input[type="date"] {
     flex-direction: column;
     margin-left:1rem;
 }
-
-.download {
-    background-color:blue;
-    border:2px solid blue;
-    color:white;
-}
